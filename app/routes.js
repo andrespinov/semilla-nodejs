@@ -11,7 +11,7 @@ const config = require('./config/config');
 router.route('/ping').get((req, res) => {
   res.send('Pong');
 });
-const uri = process.env.MONGO_URL|| "mongodb://localhost/test"
+const uri = process.env.MONGO_URL|| "mongodb://localhost:7080/test"
 router.route('/verificar').get((req, res) => {
   mongoose.connect(uri, function(err, db) {
       if (err) {
