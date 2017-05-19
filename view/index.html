@@ -1,18 +1,279 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
 <head>
     <meta charset="utf-8">
-    <title>NodeJs Sesion 2</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <title>Mango Andrés Castrillón</title>
+    <link rel="shortcut icon" href="src/icono.ico">
+
+    <!-- jquery-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <!-- normalize cs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" charset="utf-8"></script>
+
+    <!-- Materialize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.js"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <!--mi css -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- particle js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- fullpage js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css">
+
+    <!--mi js -->
+    <script src="/js/script.js" charset="utf-8"></script>
 </head>
 
 <body>
-    <div class="header">
-        <h1 class="titulo">Servidor corriendo</h1>
-        <a href="/contacto.html">Contacto</a>
+
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <a href="#paginaUno" class="brand-logo fuente-primaria color-accent">Mango</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#paginaDos">Sobre mi</a></li>
+                <li><a href="#paginaTres">Habilidades</a></li>
+                <li><a href="#paginaCuatro">Portafolio</a></li>
+                <li><a href="#paginaCinco">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="fullpage">
+        <header class="section">
+            <div id="particles-js"></div>
+            <div class="text-header">
+                <h1 class="fuente-primaria white-text">Hola! mi nombre es <span class="color-accent">Mango</h1>
+                <h5 class="white-text">Desarrollador web</h5>
+            </div>
+        </header>
+
+        <!--Inicia sobre mi-->
+        <div class="seccion seccion-sobre-mi section section-1">
+            <div class="row">
+                <div class="col m4 container">
+                    <h4 class="color-accent fuente-primaria center">Sobre mi</h4>
+                    <p class="">Nací el 12 de Septiembre de 2016 en Medellín Antioquia, llegué a una familia donde me ofrecieron todo su amor y yo solo me dediqué a morder zapatos y orinar en todo lugar, poco a poco me fui acostumbrando a este hogar, ahora tengo
+                        7 meses, soy un poco mas juicioso, amo correr por todas partes y jugar con mi pelota.</p>
+                </div>
+                <div class="col m4 foto-perfil">
+                    <figure>
+                        <img src="src/foto.jpg" class="responsive-img z-depth-2">
+                    </figure>
+                </div>
+                <div class="col m4">
+                    <h4 class="color-accent fuente-primaria center">Información personal</h4>
+                    <div class="lista-informacion">
+                        <ul>
+                            <li>
+                                <span class="color-primary-light text-bold">Nombre:</span> Mango Andrés Castrillón Medina
+                                <div class="divider">
+                                </div>
+                            </li>
+                            <li>
+                                <span class="color-primary-light text-bold">Edad:</span> 7 meses
+                                <div class="divider">
+                                </div>
+                            </li>
+                            <li>
+                                <span class="color-primary-light text-bold">Teléfono:</span> +57 1234567
+                                <div class="divider">
+                                </div>
+                            </li>
+                            <li>
+                                <span class="color-primary-light text-bold">Email:</span> pom.mango@gmail.com
+                                <div class="divider">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Termina sobre mi -->
+
+        <!-- Inicia habilidades-->
+        <div class="seccion white-text seccion-habilidades section section-2">
+            <h2 class="fuente-primaria center">Habilidades</h2>
+            <div class="row">
+                <div class="col s6 center">
+                    <ul>
+                        <li>
+                            <span><i class="fa fa-star color-accent" aria-hidden="true"></i>HTML</span> - Experto
+                        </li>
+                        <li>
+                            <span><i class="fa fa-star color-accent" aria-hidden="true"></i>CSS</span> - Experto
+                        </li>
+                        <li>
+                            <span>NodeJS</span> - Avanzado
+                        </li>
+                        <li>
+                            <span>SQL</span> - Medio
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s6 center">
+                    <ul>
+                        <li>
+                            <span><i class="fa fa-star color-accent" aria-hidden="true"></i>Python</span> - Experto
+                        </li>
+                        <li>
+                            <span>Javascript</span> - Avanzado
+                        </li>
+                        <li>
+                            <span>Clojure</span> - Principiante
+                        </li>
+                        <li>
+                            <span>Haskell</span> - Medio
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!--Termina habildiades-->
+
+        <!--Inicia proyectos -->
+        <div class="seccion seccion-portafolio back-color-primary-light white-text section section-3">
+            <h2 class="fuente-primaria center">Portafolio</h2>
+            <div class="row">
+
+                <!--proyecto 1 -->
+                <div class="col s3 card-div">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="src/find.jpg">
+                        </div>
+                        <div class="card-content">
+                            <h5 class="fuente-primaria color-primary-dark">Encuentra tu mascota</h5>
+                            <p><a class="card-title activator">Ver más</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Descripción<i class="fa fa-times" aria-hidden="true"></i></span>
+                            <p class="black-text">Desarrollé una aplicación que ayuda a encontrar todas las mascotas perdidas en la ciudad de Medellín a través de collares inteligentes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--proyecto 2 -->
+                <div class="col s3 card-div">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="src/dog-cat.jpg">
+                        </div>
+                        <div class="card-content">
+                            <h5 class="fuente-primaria color-primary-dark">Gatos y perros felices</h5>
+                            <p><a class="card-title activator">Ver más</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Descripción<i class="fa fa-times" aria-hidden="true"></i></span>
+                            <p class="black-text">Cansado de que los gatos me arañaran decidí liderar una campaña para promover la paz entre perros y gatos, la cual acogio a 100.000 mascotas de la ciudad que terminaron siendo amigas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--proyecto 3-->
+                <div class="col s3 card-div">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="src/perronalidad.jpg">
+                        </div>
+                        <div class="card-content">
+                            <h5 class="fuente-primaria color-primary-dark">Perronalidad</h5>
+                            <p><a class="card-title activator">Ver más</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Descripción<i class="fa fa-times" aria-hidden="true"></i></span>
+                            <p class="black-text">Creé un test para conocer la personalidad de tu perro y de esta forma adecuar mejor sus cuidados</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--proyecto 4-->
+                <div class="col s3 card-div">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="src/cat.jpg">
+                        </div>
+                        <div class="card-content">
+                            <h5 class="fuente-primaria color-primary-dark">Bola de pelos</h5>
+                            <p><a class="card-title activator">Ver más</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Descripción<i class="fa fa-times" aria-hidden="true"></i></span>
+                            <p class="black-text">Utilizando inteligencia artificial, desarrollé una página web capáz de emular una bola de pelos de un gato con solo subir su foto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fin proyectos-->
+
+        <!--Inicia contacto-->
+        <div class="seccion seccion-contacto section section-4">
+            <h2 class="fuente-primaria center color-accent">Contacto</h2>
+            <div class="row">
+                <div class="col m6 s12 mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4111.208576452388!2d-75.57141785191953!3d6.266961496798415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428e0c9c8772f%3A0x10cce7ece69b2e2b!2sUniversidad+De+Antioquia!5e0!3m2!1ses-419!2sco!4v1493994423078"
+                        width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="col m6 s12">
+                    <ul class="lista-contactos">
+                        <!-- Telefono -->
+                        <li>
+                            <span>
+                        <i class="fa fa-volume-control-phone color-accent" aria-hidden="true"></i>
+                      </span> +57 1234567
+                        </li>
+                        <!-- Correo -->
+                        <li>
+                            <span>
+                          <i class="fa fa-envelope-o color-accent" aria-hidden="true"></i>
+                        </span> pom.mango@gmail.com
+                        </li>
+                        <!-- Github -->
+                        <li>
+                            <span>
+                        <i class="fa fa-github color-accent" aria-hidden="true"></i>
+                      </span> <a href="http://www.github.com/kodexxudea" class="black-text" target="_blank">Kodexx UdeA</a>
+                        </li>
+                        <!--Instagram-->
+                        <li>
+                            <span>
+                      <i class="fa fa-instagram color-accent" aria-hidden="true"></i>
+                    </span> <a href="http://www.instagram.com/pom.mango" class="black-text" target="_blank">pom.mango</a>
+                        </li>
+                        <!--Facebook-->
+                        <li>
+                            <span>
+                      <i class="fa fa-facebook-official color-accent" aria-hidden="true"></i>
+                    </span> <a href="http://www.facebook.com/groups/kodexxudea" class="black-text" target="_blank">Kodexx UdeA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <footer class="back-color-primary-dark white-text">
+                <div class="footer-copyright">
+                    <div class="container">
+                        © 2017 <a href="http://manucastrillonm.com" class="white-text" target="_blank">Manuela Castrillón Medina</a>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+        <!--Fin contacto-->
+
     </div>
-    <script src="/js/main.js" charset="utf-8"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Noto+Sans');
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.color-primary {
+    color: #2196F3
+}
+
+.color-accent {
+    color: #FF6D00;
+}
+
+.color-primary-light {
+    color: #42A5F5;
+}
+
+.color-primary-dark {
+    color: #1565C0;
+}
+
+.back-color-primary {
+    background-color: #2196F3
+}
+
+.back-color-accent {
+    background-color: #FF6D00;
+}
+
+.back-color-primary-light {
+    background-color: #42A5F5;
+}
+
+.back-color-primary-dark {
+    background-color: #1565C0;
+}
+
+.fuente-primaria {
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+
+/*Navbar */
+
+nav {
+    background: transparent;
+    z-index: 900;
+    box-shadow: none;
+    position: absolute;
+    padding: 0 2em;
+    background-color: #2196F3;
+    box-shadow: 2px 2px 3px grey;
+    /**borrar**/
+    -webkit-transition: background 1s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 1s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 1s ease-in-out, padding 0.5s ease-in-out;
+}
+
+
+/** borrar**/
+.scroll-navbar {
+    position: fixed;
+    background-color: #2196F3;
+    box-shadow: 2px 2px 3px grey;
+}
+
+
+/* Header */
+
+header {
+    height: 90vh;
+    background: #2196F3;
+    background: -webkit-linear-gradient(left, #42A5F5, #1565C0);
+    background: -o-linear-gradient(left, #42A5F5, #1565C0);
+    background: -moz-linear-gradient(left, #42A5F5, #1565C0);
+    background: linear-gradient(left, #42A5F5, #1565C0);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.text-header {
+    margin: 0 0 3em 4em;
+    z-index: 2;
+}
+
+#particles-js {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+/* Sobre mi */
+
+.foto-perfil figure {
+    padding: 1em 1em 3em 1em !important;
+    box-shadow: 2px 2px 4px 2px grey;
+    -webkit-box-shadow: 2px 2px 4px 2px grey;
+    -moz-box-shadow: 2px 2px 4px 2px grey;
+    -ms-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+.lista-informacion ul li {
+    padding: 1.5em 1em;
+}
+
+.seccion-sobre-mi p {
+    text-align: justify;
+}
+
+
+/* Habilidades */
+
+.seccion-habilidades {
+    background: -webkit-linear-gradient(top, #1565C0, #42A5F5);
+}
+
+.seccion-habilidades li {
+    font-size: 1.3em;
+}
+
+
+/* Proyectos */
+
+.card .card-image {
+    height: 200px;
+}
+
+.card-div {
+    padding: 1em 2em !important;
+}
+
+
+/* Contacto */
+
+.mapa {
+    padding: 0 2em !important;
+}
+
+.lista-contactos {
+    font-size: 1.5em;
+}
+
+
+/* estilos generales */
+
+.text-bold {
+    font-weight: bold;
+}
+
+.container {
+    padding: 1em 2em !important;
+}
+
+
+/* Footer */

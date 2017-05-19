@@ -1,5 +1,7 @@
 //Framework Web para NodeJs
 const express = require('express');
+const mongoose = require('mongoose');
+
 
 /**
   *Chalk es usada para colorear la consola.
@@ -11,6 +13,8 @@ const chalk = require('chalk');
 **/
 const routes = require('./routes');
 
+
+// Connection URL
 
 /**
  *Se crea servidor express
@@ -45,6 +49,7 @@ app.use(routes);
   * el puerto  app.get('port'),recordar que este lo asginamos en /config/express.js
   * La funcion contenida sola
 **/
+
 app.listen(app.get('port'), () => {
-    console.log("Estamos corriendo en -->" + app.get('port')+ chalk.green('✓'));
+    console.log("Estamos corriendo en desde Docker --->" + app.get('port')+ chalk.green('✓'));
 })
