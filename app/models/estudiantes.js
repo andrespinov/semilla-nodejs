@@ -1,5 +1,3 @@
-var estudiante=[{nombre:"martin",telefono:"2337323"}];
-
 
 /**
  *Se crea un nuevo router que va a contener las rutas de

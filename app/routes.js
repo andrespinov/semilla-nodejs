@@ -8,7 +8,7 @@ const config = require('./config/config');
  * Rustas---> Index
  **/
 router.route('/ping').get((req, res) => {
-    res.send('Pong');
+    res.send('Pong').status(200);
 });
 
 /**
