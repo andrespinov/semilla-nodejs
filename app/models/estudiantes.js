@@ -1,4 +1,4 @@
-var estudiante=[{nombre:"martin",telefono:"2337323"}];
+
 
 
 /**
